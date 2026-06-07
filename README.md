@@ -189,11 +189,11 @@ python scripts/evaluate.py --images data/eval/images --labels data/eval/labels \
 
 | 指标 | 数值 |
 |---|---|
-| 精确率 Precision | **87.4%** |
-| 召回率 Recall | **85.8%**（≥80% ✓） |
-| mAP@0.5 | **83.6%** |
-| 误检率 | 12.7% |
-| 漏检率 | 14.2% |
+| 精确率 Precision | **89.6%** |
+| 召回率 Recall | **86.1%**（≥80% ✓） |
+| mAP@0.5 | **83.7%** |
+| 误检率 | 10.4% |
+| 漏检率 | 13.9% |
 
 ![评测指标](outputs/eval/eval_metrics.png)
 ![误检漏检分析](outputs/eval/error_analysis.png)
@@ -256,7 +256,7 @@ python scripts/onnx_infer.py --onnx weights/best.onnx --image assets/test_image.
 ## 10. 实验结果展示
 
 - 训练：mAP@0.5 ≈ 0.894，mAP@0.5:0.95 ≈ 0.656（`outputs/train/`）。
-- 评测：Precision 87.4% / Recall 85.8% / mAP@0.5 83.6%（`outputs/eval/`）。
+- 评测：Precision 89.6% / Recall 86.1% / mAP@0.5 83.7%（`outputs/eval/`）。
 - 数据集：见 `outputs/dataset_check/`（含小目标比例统计）。
 - 推理：图片 `outputs/infer/`、视频 `outputs/video/`、ONNX `outputs/onnx/`。
 - 失败案例：`outputs/failure_cases/`（12 例，含原因与改进）。

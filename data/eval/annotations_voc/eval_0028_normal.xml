@@ -4,18 +4,18 @@
   <size><width>720</width><height>720</height><depth>3</depth></size>
   <segmented>0</segmented>
   <object>
-    <name>ph4</name>
+    <name>pl100</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>124</xmin><ymin>388</ymin><xmax>238</xmax><ymax>502</ymax></bndbox>
+    <bndbox><xmin>314</xmin><ymin>322</ymin><xmax>395</xmax><ymax>403</ymax></bndbox>
   </object>
   <object>
-    <name>pl30</name>
+    <name>i5</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>127</xmin><ymin>124</ymin><xmax>184</xmax><ymax>181</ymax></bndbox>
+    <bndbox><xmin>209</xmin><ymin>74</ymin><xmax>278</xmax><ymax>143</ymax></bndbox>
   </object>
   <object>
-    <name>i2</name>
+    <name>ph4.5</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>307</xmin><ymin>468</ymin><xmax>444</xmax><ymax>605</ymax></bndbox>
+    <bndbox><xmin>287</xmin><ymin>297</ymin><xmax>326</xmax><ymax>336</ymax></bndbox>
   </object>
 </annotation>

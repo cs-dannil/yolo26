@@ -84,8 +84,22 @@ CANDIDATES = {
     "wo":  ["CN road sign 警 24.svg", "CN road sign 警 28.svg"],
 }
 
-# 真实街景背景（维基共享资源，CC 许可）。下载失败的用 picsum 真实照片补足。
+# 真实街景/道路/车流背景（维基共享资源，CC 许可）。下载失败的用 picsum 真实照片补足。
 BG_COMMONS = [
+    "Busy daytime traffic in Guomao (Unsplash).jpg",
+    "Yan'an East Road Interchange, Shanghai, China (Unsplash).jpg",
+    "Hongqiao Road, Shanghai, at night.jpg",
+    "Traffic Congestion on G15 Highway when Chunyun in China (cropped).JPG",
+    "China Expressway Traffic light at G9411 Humen Bridge K36+100.jpg",
+    "Intersection of Dongfeng Road and Jingsan Street 20250602100906.jpg",
+    "202309 Intersection of Fahuazhen Road and Panyu Road.jpg",
+    "201703 Intersection of Changhua Road and Putuo Road.jpg",
+    "Ningguo Road intersection at Wuhu Road.jpg",
+    "Kowloon City Road 201007.jpg",
+    "HK Kowloon City Road Market East Kowloon Corridor.JPG",
+    "Shanghai - side street of Nanjing Road (6275637545).jpg",
+    "Shanghai - Xinyongan Road - 0001.jpg",
+    "Beijing Road in Guangzhou.jpg",
     "千祥街禁止机动车驶入.jpg",
 ]
 

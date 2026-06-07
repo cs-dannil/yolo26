@@ -4,9 +4,9 @@
   <size><width>720</width><height>720</height><depth>3</depth></size>
   <segmented>0</segmented>
   <object>
-    <name>wo</name>
+    <name>pl120</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>144</xmin><ymin>229</ymin><xmax>171</xmax><ymax>256</ymax></bndbox>
+    <bndbox><xmin>426</xmin><ymin>358</ymin><xmax>445</xmax><ymax>377</ymax></bndbox>
   </object>
   <object>
     <name>pl120</name>
