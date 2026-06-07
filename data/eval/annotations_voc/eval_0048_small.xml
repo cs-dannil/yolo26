@@ -1,0 +1,26 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0048_small.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>ip</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>42</xmin><ymin>166</ymin><xmax>70</xmax><ymax>194</ymax></bndbox>
+  </object>
+  <object>
+    <name>w59</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>674</xmin><ymin>421</ymin><xmax>692</xmax><ymax>439</ymax></bndbox>
+  </object>
+  <object>
+    <name>w55</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>261</xmin><ymin>142</ymin><xmax>281</xmax><ymax>162</ymax></bndbox>
+  </object>
+  <object>
+    <name>ph4.5</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>170</xmin><ymin>167</ymin><xmax>190</xmax><ymax>187</ymax></bndbox>
+  </object>
+</annotation>

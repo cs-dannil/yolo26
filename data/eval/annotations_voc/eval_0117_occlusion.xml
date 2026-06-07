@@ -1,0 +1,16 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0117_occlusion.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>pl50</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>590</xmin><ymin>115</ymin><xmax>693</xmax><ymax>218</ymax></bndbox>
+  </object>
+  <object>
+    <name>ph4</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>30</xmin><ymin>159</ymin><xmax>179</xmax><ymax>308</ymax></bndbox>
+  </object>
+</annotation>

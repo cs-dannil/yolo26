@@ -1,0 +1,11 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0050_normal.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>pl40</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>385</xmin><ymin>294</ymin><xmax>530</xmax><ymax>439</ymax></bndbox>
+  </object>
+</annotation>

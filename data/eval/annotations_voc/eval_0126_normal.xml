@@ -1,0 +1,21 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0126_normal.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>pm20</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>232</xmin><ymin>476</ymin><xmax>360</xmax><ymax>604</ymax></bndbox>
+  </object>
+  <object>
+    <name>ph4</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>453</xmin><ymin>243</ymin><xmax>570</xmax><ymax>360</ymax></bndbox>
+  </object>
+  <object>
+    <name>pl50</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>302</xmin><ymin>126</ymin><xmax>401</xmax><ymax>225</ymax></bndbox>
+  </object>
+</annotation>

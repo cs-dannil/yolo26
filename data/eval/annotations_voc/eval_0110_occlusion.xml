@@ -1,0 +1,16 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0110_occlusion.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>il100</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>178</xmin><ymin>69</ymin><xmax>319</xmax><ymax>210</ymax></bndbox>
+  </object>
+  <object>
+    <name>pg</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>13</xmin><ymin>126</ymin><xmax>147</xmax><ymax>260</ymax></bndbox>
+  </object>
+</annotation>

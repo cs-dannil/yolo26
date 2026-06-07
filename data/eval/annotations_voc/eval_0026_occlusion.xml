@@ -1,0 +1,21 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0026_occlusion.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>pl40</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>530</xmin><ymin>103</ymin><xmax>564</xmax><ymax>137</ymax></bndbox>
+  </object>
+  <object>
+    <name>wo</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>405</xmin><ymin>9</ymin><xmax>493</xmax><ymax>97</ymax></bndbox>
+  </object>
+  <object>
+    <name>w59</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>336</xmin><ymin>375</ymin><xmax>453</xmax><ymax>492</ymax></bndbox>
+  </object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0114_night.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>w13</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>57</xmin><ymin>155</ymin><xmax>91</xmax><ymax>189</ymax></bndbox>
+  </object>
+  <object>
+    <name>pm30</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>321</xmin><ymin>49</ymin><xmax>425</xmax><ymax>153</ymax></bndbox>
+  </object>
+  <object>
+    <name>ip</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>417</xmin><ymin>175</ymin><xmax>463</xmax><ymax>221</ymax></bndbox>
+  </object>
+  <object>
+    <name>p6</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>369</xmin><ymin>337</ymin><xmax>482</xmax><ymax>450</ymax></bndbox>
+  </object>
+</annotation>

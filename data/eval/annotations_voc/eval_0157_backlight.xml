@@ -1,0 +1,21 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0157_backlight.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>wo</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>51</xmin><ymin>300</ymin><xmax>127</xmax><ymax>376</ymax></bndbox>
+  </object>
+  <object>
+    <name>w55</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>591</xmin><ymin>287</ymin><xmax>673</xmax><ymax>369</ymax></bndbox>
+  </object>
+  <object>
+    <name>il80</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>95</xmin><ymin>44</ymin><xmax>153</xmax><ymax>102</ymax></bndbox>
+  </object>
+</annotation>

@@ -1,0 +1,11 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0016_night.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>w55</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>404</xmin><ymin>503</ymin><xmax>524</xmax><ymax>623</ymax></bndbox>
+  </object>
+</annotation>

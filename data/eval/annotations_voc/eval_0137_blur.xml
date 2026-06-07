@@ -1,0 +1,16 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0137_blur.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>ph4.5</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>84</xmin><ymin>46</ymin><xmax>125</xmax><ymax>87</ymax></bndbox>
+  </object>
+  <object>
+    <name>w13</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>618</xmin><ymin>284</ymin><xmax>696</xmax><ymax>362</ymax></bndbox>
+  </object>
+</annotation>

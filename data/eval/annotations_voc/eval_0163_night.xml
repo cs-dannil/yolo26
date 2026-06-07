@@ -1,0 +1,16 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0163_night.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>ph4.5</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>249</xmin><ymin>412</ymin><xmax>318</xmax><ymax>481</ymax></bndbox>
+  </object>
+  <object>
+    <name>p27</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>546</xmin><ymin>42</ymin><xmax>622</xmax><ymax>118</ymax></bndbox>
+  </object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0000_normal.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>pne</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>557</xmin><ymin>318</ymin><xmax>628</xmax><ymax>389</ymax></bndbox>
+  </object>
+  <object>
+    <name>il80</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>591</xmin><ymin>386</ymin><xmax>668</xmax><ymax>463</ymax></bndbox>
+  </object>
+  <object>
+    <name>p10</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>150</xmin><ymin>98</ymin><xmax>220</xmax><ymax>168</ymax></bndbox>
+  </object>
+  <object>
+    <name>pr40</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>373</xmin><ymin>350</ymin><xmax>422</xmax><ymax>399</ymax></bndbox>
+  </object>
+</annotation>

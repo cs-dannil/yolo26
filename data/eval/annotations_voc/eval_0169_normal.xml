@@ -1,0 +1,26 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0169_normal.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>p3</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>466</xmin><ymin>240</ymin><xmax>563</xmax><ymax>337</ymax></bndbox>
+  </object>
+  <object>
+    <name>wo</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>94</xmin><ymin>434</ymin><xmax>193</xmax><ymax>533</ymax></bndbox>
+  </object>
+  <object>
+    <name>w57</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>297</xmin><ymin>228</ymin><xmax>404</xmax><ymax>335</ymax></bndbox>
+  </object>
+  <object>
+    <name>w59</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>121</xmin><ymin>307</ymin><xmax>175</xmax><ymax>361</ymax></bndbox>
+  </object>
+</annotation>

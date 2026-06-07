@@ -1,0 +1,26 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0041_small.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>p27</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>27</xmin><ymin>493</ymin><xmax>47</xmax><ymax>513</ymax></bndbox>
+  </object>
+  <object>
+    <name>il100</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>271</xmin><ymin>129</ymin><xmax>299</xmax><ymax>157</ymax></bndbox>
+  </object>
+  <object>
+    <name>pl5</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>119</xmin><ymin>39</ymin><xmax>133</xmax><ymax>53</ymax></bndbox>
+  </object>
+  <object>
+    <name>pl5</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>25</xmin><ymin>68</ymin><xmax>46</xmax><ymax>89</ymax></bndbox>
+  </object>
+</annotation>

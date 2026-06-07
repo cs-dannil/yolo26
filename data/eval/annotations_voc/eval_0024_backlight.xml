@@ -1,0 +1,16 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0024_backlight.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>ph4.5</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>349</xmin><ymin>299</ymin><xmax>459</xmax><ymax>409</ymax></bndbox>
+  </object>
+  <object>
+    <name>pne</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>594</xmin><ymin>334</ymin><xmax>709</xmax><ymax>449</ymax></bndbox>
+  </object>
+</annotation>

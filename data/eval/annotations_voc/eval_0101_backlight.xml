@@ -1,0 +1,26 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0101_backlight.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>ph5</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>443</xmin><ymin>420</ymin><xmax>590</xmax><ymax>567</ymax></bndbox>
+  </object>
+  <object>
+    <name>pl80</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>110</xmin><ymin>430</ymin><xmax>236</xmax><ymax>556</ymax></bndbox>
+  </object>
+  <object>
+    <name>i4</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>534</xmin><ymin>284</ymin><xmax>621</xmax><ymax>371</ymax></bndbox>
+  </object>
+  <object>
+    <name>i4</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>369</xmin><ymin>70</ymin><xmax>450</xmax><ymax>151</ymax></bndbox>
+  </object>
+</annotation>

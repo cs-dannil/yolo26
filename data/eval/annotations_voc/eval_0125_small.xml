@@ -1,0 +1,16 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0125_small.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>pl70</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>566</xmin><ymin>251</ymin><xmax>589</xmax><ymax>274</ymax></bndbox>
+  </object>
+  <object>
+    <name>il80</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>463</xmin><ymin>119</ymin><xmax>479</xmax><ymax>135</ymax></bndbox>
+  </object>
+</annotation>
