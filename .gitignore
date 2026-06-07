@@ -1,0 +1,28 @@
+# 数据集与大文件（按要求不上传到远程仓库）
+data/tt100k/images/
+data/tt100k/labels/
+data/tt100k/*.cache
+data/eval/images/
+data/eval/labels/
+*.zip
+*.tar
+*.tar.gz
+
+# 模型权重（大文件，不上传）
+weights/*.pt
+weights/*.onnx
+*.engine
+
+# 大体积视频成果（仓库中保留说明，不传二进制）
+outputs/video/*.mp4
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# 系统
+.DS_Store
+*.log

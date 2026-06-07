@@ -1,0 +1,22 @@
+# YOLO26 交通标志识别项目依赖
+# 核心训练/推理
+ultralytics>=8.3.0          # 提供 YOLO 系列（含 yolo26）训练与推理
+torch>=2.1.0               # 深度学习框架（按 CUDA 版本安装对应 wheel）
+torchvision>=0.16.0
+
+# 数据处理与可视化
+numpy>=1.24
+opencv-python>=4.8.0       # 视频读写与绘制（无显示环境可用 opencv-python-headless）
+pillow>=10.0.0
+matplotlib>=3.7.0
+pandas>=2.0.0
+
+# ONNX 导出与推理
+onnx>=1.15.0
+onnxruntime>=1.17.0
+
+# 图形界面
+PySide6>=6.6.0
+
+# 标注工具（评测集制作）
+labelImg>=1.8.6
