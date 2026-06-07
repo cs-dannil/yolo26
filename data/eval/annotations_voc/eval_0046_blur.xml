@@ -4,13 +4,13 @@
   <size><width>720</width><height>720</height><depth>3</depth></size>
   <segmented>0</segmented>
   <object>
-    <name>pl60</name>
+    <name>p5</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>302</xmin><ymin>364</ymin><xmax>390</xmax><ymax>452</ymax></bndbox>
+    <bndbox><xmin>133</xmin><ymin>225</ymin><xmax>228</xmax><ymax>320</ymax></bndbox>
   </object>
   <object>
-    <name>p11</name>
+    <name>p3</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>548</xmin><ymin>15</ymin><xmax>628</xmax><ymax>95</ymax></bndbox>
+    <bndbox><xmin>562</xmin><ymin>157</ymin><xmax>684</xmax><ymax>279</ymax></bndbox>
   </object>
 </annotation>

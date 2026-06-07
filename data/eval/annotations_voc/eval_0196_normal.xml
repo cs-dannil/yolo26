@@ -4,18 +4,23 @@
   <size><width>720</width><height>720</height><depth>3</depth></size>
   <segmented>0</segmented>
   <object>
-    <name>p12</name>
+    <name>pne</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>187</xmin><ymin>386</ymin><xmax>299</xmax><ymax>498</ymax></bndbox>
+    <bndbox><xmin>579</xmin><ymin>384</ymin><xmax>716</xmax><ymax>521</ymax></bndbox>
   </object>
   <object>
-    <name>p6</name>
+    <name>pl70</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>367</xmin><ymin>142</ymin><xmax>506</xmax><ymax>281</ymax></bndbox>
+    <bndbox><xmin>437</xmin><ymin>112</ymin><xmax>501</xmax><ymax>176</ymax></bndbox>
   </object>
   <object>
-    <name>il60</name>
+    <name>p19</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>518</xmin><ymin>472</ymin><xmax>637</xmax><ymax>591</ymax></bndbox>
+    <bndbox><xmin>163</xmin><ymin>399</ymin><xmax>230</xmax><ymax>466</ymax></bndbox>
+  </object>
+  <object>
+    <name>w32</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>533</xmin><ymin>325</ymin><xmax>591</xmax><ymax>383</ymax></bndbox>
   </object>
 </annotation>

@@ -5,13 +5,81 @@
 蓝圈指示、黄三角警告等），用来跑通整条数据→检查→训练→评测链路。
 真实使用时把 data/tt100k 换成官方数据即可，类别定义完全一致。
 """
+import os
 import random
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image, ImageDraw, ImageFilter, ImageEnhance
 
 from .draw import find_font
 from .classes import CLASSES, CLASS_ZH
+
+_HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+REAL_SIGN_DIR = os.path.join(_HERE, "data", "real_signs")
+REAL_BG_DIR = os.path.join(_HERE, "data", "real_backgrounds")
+
+_REAL_SIGN_CACHE = {}
+_REAL_BG_LIST = None
+
+
+def has_real_assets():
+    return os.path.isdir(REAL_SIGN_DIR) and len(os.listdir(REAL_SIGN_DIR)) > 0
+
+
+def _load_real_sign(name):
+    """加载真实标志面 PNG（RGBA），不存在返回 None。带缓存。"""
+    if name in _REAL_SIGN_CACHE:
+        return _REAL_SIGN_CACHE[name]
+    p = os.path.join(REAL_SIGN_DIR, name + ".png")
+    im = None
+    if os.path.exists(p):
+        try:
+            im = Image.open(p).convert("RGBA")
+        except Exception:
+            im = None
+    _REAL_SIGN_CACHE[name] = im
+    return im
+
+
+def _real_sign_render(size, name):
+    """返回真实标志缩放到 size 的 RGBA 图，附带轻微增强；无真实素材时返回 None。"""
+    im = _load_real_sign(name)
+    if im is None:
+        return None
+    s = im.resize((size, size), Image.LANCZOS)
+    if random.random() < 0.4:  # 轻微旋转，贴近真实拍摄角度
+        s = s.rotate(random.uniform(-8, 8), expand=False, resample=Image.BICUBIC)
+    if random.random() < 0.5:  # 亮度抖动
+        s = ImageEnhance.Brightness(s).enhance(random.uniform(0.8, 1.15))
+    return s
+
+
+def render_sign(size, name):
+    """统一标志渲染：优先真实标志面，缺失时回退矢量绘制。"""
+    return _real_sign_render(size, name) or _draw_sign(size, name)
+
+
+def _real_background(w, h):
+    """随机选一张真实照片作背景并裁剪到 w×h；无真实素材时返回 None。"""
+    global _REAL_BG_LIST
+    if _REAL_BG_LIST is None:
+        _REAL_BG_LIST = []
+        if os.path.isdir(REAL_BG_DIR):
+            _REAL_BG_LIST = [os.path.join(REAL_BG_DIR, f)
+                             for f in os.listdir(REAL_BG_DIR)
+                             if f.lower().endswith((".jpg", ".jpeg", ".png"))]
+    if not _REAL_BG_LIST:
+        return None
+    try:
+        im = Image.open(random.choice(_REAL_BG_LIST)).convert("RGB")
+    except Exception:
+        return None
+    # 等比缩放后中心裁剪
+    scale = max(w / im.width, h / im.height)
+    im = im.resize((int(im.width * scale) + 1, int(im.height * scale) + 1), Image.LANCZOS)
+    left = random.randint(0, max(0, im.width - w))
+    top = random.randint(0, max(0, im.height - h))
+    return im.crop((left, top, left + w, top + h))
 
 
 def _sign_group(name: str) -> str:
@@ -98,7 +166,7 @@ def make_image(w=640, h=640, min_signs=1, max_signs=4,
         random.seed(seed)
         np.random.seed(seed % (2**32 - 1))
     classes = classes or CLASSES
-    img = _background(w, h)
+    img = _real_background(w, h) or _background(w, h)
     n = random.randint(min_signs, max_signs)
     labels = []
     placed = []
@@ -121,7 +189,7 @@ def make_image(w=640, h=640, min_signs=1, max_signs=4,
         if not ok:
             continue
         placed.append(box)
-        sign = _draw_sign(size, name)
+        sign = _real_sign_render(size, name) or _draw_sign(size, name)
         if size < 32 and random.random() < 0.5:
             sign = sign.filter(ImageFilter.GaussianBlur(0.6))
         img.paste(sign, (x, y), sign)

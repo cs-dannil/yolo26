@@ -20,7 +20,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
 from src.classes import CLASSES                     # noqa: E402
-from src.sign_factory import _background, _draw_sign, _iou  # noqa: E402
+from src.sign_factory import _background, _real_background, render_sign, _iou  # noqa: E402
 
 EVAL_DIR = os.path.join(ROOT, "data", "eval")
 SCENARIOS = ["normal", "normal", "night", "backlight", "blur", "occlusion", "small"]
@@ -43,7 +43,8 @@ def make_one(scene, seed):
     random.seed(seed)
     np.random.seed(seed % (2**32 - 1))
     W, H = 720, 720
-    img = _background(W, H).convert("RGB")
+    bg = _real_background(W, H)
+    img = (bg or _background(W, H)).convert("RGB")
     n = random.randint(1, 4)
     labels = []
     placed = []
@@ -64,7 +65,7 @@ def make_one(scene, seed):
         if not ok:
             continue
         placed.append(box)
-        sign = _draw_sign(size, name)
+        sign = render_sign(size, name)
         img.paste(sign, (x, y), sign)
         if scene == "occlusion":
             d = ImageDraw.Draw(img)

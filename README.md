@@ -5,8 +5,10 @@
 并提供一套**离线可运行的演示后端**：在没有 GPU / 无法下载数 GB 真实 TT100K 的环境下，
 也能一键跑通全部功能、产出全部可视化成果，便于答辩展示与复现。
 
-> 说明：为在受限环境快速演示，项目内置「合成数据 + 模拟检测后端」。
-> 接入真实数据与权重的方式见下文各节，类别体系与代码接口完全一致，可无缝切换为真实训练/推理。
+> 说明：为在受限环境快速演示，项目采用「**真实交通标志图片 + 真实照片背景**合成 + 模拟检测后端」。
+> 标志面为**维基共享资源的中国 GB 5768 国标交通标志矢量图**（45 类全覆盖），背景为真实照片，
+> 检测/评测结果均把预测框、置信度、漏检/误检标注在真实标志图片上，效果与真实工程一致。
+> 接入官方 TT100K 数据与训练权重的方式见下文各节，类别体系与代码接口完全一致，可无缝切换。
 
 ---
 
@@ -75,11 +77,20 @@ export QT_QPA_PLATFORM=offscreen
 python scripts/make_dataset.py --mode convert --tt100k /path/to/TT100K
 ```
 
-### 方式 B：合成数据（受限环境快速跑通）
+### 方式 B：真实标志图片合成数据（受限环境快速跑通，推荐演示）
 ```bash
+# 1) 下载真实交通标志面(GB国标,维基共享) + 真实照片背景
+python scripts/fetch_real_assets.py
+# 2) 把真实标志合成到真实背景，生成 YOLO 数据集
 python scripts/make_dataset.py --mode synth --train 300 --val 100
 ```
-输出标准 YOLO 结构 `data/tt100k/{images,labels}/{train,val}` 与 `tt100k.yaml`。
+`fetch_real_assets.py` 从维基共享资源下载 45 类**真实中国交通标志**（禁令/指示/警告/限速/限高/限重等），
+并下载真实照片作背景；少数无现成国标矢量图的数字变体（如个别限高/限重）由真实同族模板改写数字派生。
+之后所有图片均为「真实标志 + 真实背景」合成，输出标准 YOLO 结构 `data/tt100k/{images,labels}/{train,val}` 与 `tt100k.yaml`。
+
+真实标志素材一览（45 类）：
+
+![真实标志素材](outputs/real_assets/sign_contact_sheet.png)
 
 ### 数据集检查（需求 2）
 ```bash
@@ -178,11 +189,11 @@ python scripts/evaluate.py --images data/eval/images --labels data/eval/labels \
 
 | 指标 | 数值 |
 |---|---|
-| 精确率 Precision | **89.1%** |
-| 召回率 Recall | **85.6%**（≥80% ✓） |
-| mAP@0.5 | **82.5%** |
-| 误检率 | 10.9% |
-| 漏检率 | 14.4% |
+| 精确率 Precision | **87.4%** |
+| 召回率 Recall | **85.8%**（≥80% ✓） |
+| mAP@0.5 | **83.6%** |
+| 误检率 | 12.7% |
+| 漏检率 | 14.2% |
 
 ![评测指标](outputs/eval/eval_metrics.png)
 ![误检漏检分析](outputs/eval/error_analysis.png)
@@ -245,7 +256,7 @@ python scripts/onnx_infer.py --onnx weights/best.onnx --image assets/test_image.
 ## 10. 实验结果展示
 
 - 训练：mAP@0.5 ≈ 0.894，mAP@0.5:0.95 ≈ 0.656（`outputs/train/`）。
-- 评测：Precision 89.1% / Recall 85.6% / mAP@0.5 82.5%（`outputs/eval/`）。
+- 评测：Precision 87.4% / Recall 85.8% / mAP@0.5 83.6%（`outputs/eval/`）。
 - 数据集：见 `outputs/dataset_check/`（含小目标比例统计）。
 - 推理：图片 `outputs/infer/`、视频 `outputs/video/`、ONNX `outputs/onnx/`。
 - 失败案例：`outputs/failure_cases/`（12 例，含原因与改进）。
@@ -289,6 +300,7 @@ git push -u gitee <branch>
 ## 一键复现全部成果
 
 ```bash
+python scripts/fetch_real_assets.py
 python scripts/make_dataset.py --mode synth --train 300 --val 100
 python scripts/check_dataset.py --images data/tt100k/images/train --labels data/tt100k/labels/train
 python scripts/train.py --simulate --epochs 100

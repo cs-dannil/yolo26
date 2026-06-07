@@ -4,8 +4,8 @@
   <size><width>720</width><height>720</height><depth>3</depth></size>
   <segmented>0</segmented>
   <object>
-    <name>p26</name>
+    <name>pl60</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>187</xmin><ymin>17</ymin><xmax>303</xmax><ymax>133</ymax></bndbox>
+    <bndbox><xmin>353</xmin><ymin>312</ymin><xmax>469</xmax><ymax>428</ymax></bndbox>
   </object>
 </annotation>

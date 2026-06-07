@@ -4,8 +4,18 @@
   <size><width>720</width><height>720</height><depth>3</depth></size>
   <segmented>0</segmented>
   <object>
-    <name>p12</name>
+    <name>p3</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>50</xmin><ymin>132</ymin><xmax>156</xmax><ymax>238</ymax></bndbox>
+    <bndbox><xmin>486</xmin><ymin>215</ymin><xmax>609</xmax><ymax>338</ymax></bndbox>
+  </object>
+  <object>
+    <name>ip</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>271</xmin><ymin>439</ymin><xmax>417</xmax><ymax>585</ymax></bndbox>
+  </object>
+  <object>
+    <name>ph5</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>265</xmin><ymin>64</ymin><xmax>356</xmax><ymax>155</ymax></bndbox>
   </object>
 </annotation>

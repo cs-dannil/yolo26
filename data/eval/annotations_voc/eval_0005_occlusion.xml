@@ -4,13 +4,8 @@
   <size><width>720</width><height>720</height><depth>3</depth></size>
   <segmented>0</segmented>
   <object>
-    <name>pne</name>
+    <name>pl20</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>292</xmin><ymin>210</ymin><xmax>356</xmax><ymax>274</ymax></bndbox>
-  </object>
-  <object>
-    <name>w32</name>
-    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>450</xmin><ymin>341</ymin><xmax>600</xmax><ymax>491</ymax></bndbox>
+    <bndbox><xmin>266</xmin><ymin>389</ymin><xmax>354</xmax><ymax>477</ymax></bndbox>
   </object>
 </annotation>

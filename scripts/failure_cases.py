@@ -16,7 +16,7 @@ sys.path.insert(0, ROOT)
 
 from src.detector import SimDetector             # noqa: E402
 from src.draw import draw_boxes, setup_matplotlib_cjk  # noqa: E402
-from src.sign_factory import _background, _draw_sign  # noqa: E402
+from src.sign_factory import _background, _real_background, render_sign  # noqa: E402
 from src.classes import CLASSES                  # noqa: E402
 
 OUT = os.path.join(ROOT, "outputs", "failure_cases")
@@ -53,12 +53,12 @@ CASES = [
 def _gen_scene(scene, seed):
     random.seed(seed); np.random.seed(seed)
     W, H = 480, 480
-    img = _background(W, H).convert("RGB")
+    img = (_real_background(W, H) or _background(W, H)).convert("RGB")
     name = random.choice(CLASSES)
     cid = CLASSES.index(name)
     size = random.randint(16, 28) if "small" in scene else random.randint(60, 130)
     x = random.randint(40, W - size - 40); y = random.randint(40, H // 2)
-    sign = _draw_sign(size, name)
+    sign = render_sign(size, name)
     img.paste(sign, (x, y), sign)
     if scene == "occlusion":
         ImageDraw.Draw(img).rectangle(

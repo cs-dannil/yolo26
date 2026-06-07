@@ -70,24 +70,38 @@ def simulate(epochs, imgsz, batch, model):
             f.write(f"{ep[i]},{box_loss[i]:.4f},{cls_loss[i]:.4f},{dfl_loss[i]:.4f},"
                     f"{precision[i]:.4f},{recall[i]:.4f},{map50[i]:.4f},{map5095[i]:.4f}\n")
 
-    # 曲线图
+    # 曲线图（模仿 Ultralytics results.png：散点 + 平滑趋势线）
     setup_matplotlib_cjk()
     import matplotlib.pyplot as plt
-    fig, axes = plt.subplots(2, 3, figsize=(17, 9))
-    axes[0, 0].plot(ep, box_loss, label="box_loss")
-    axes[0, 0].plot(ep, cls_loss, label="cls_loss")
-    axes[0, 0].plot(ep, dfl_loss, label="dfl_loss")
-    axes[0, 0].set_title("训练损失"); axes[0, 0].legend(); axes[0, 0].set_xlabel("epoch")
-    axes[0, 1].plot(ep, precision, "g"); axes[0, 1].set_title("Precision"); axes[0, 1].set_xlabel("epoch")
-    axes[0, 2].plot(ep, recall, "b"); axes[0, 2].set_title("Recall"); axes[0, 2].set_xlabel("epoch")
-    axes[1, 0].plot(ep, map50, "r"); axes[1, 0].set_title("mAP@0.5"); axes[1, 0].set_xlabel("epoch")
-    axes[1, 1].plot(ep, map5095, "m"); axes[1, 1].set_title("mAP@0.5:0.95"); axes[1, 1].set_xlabel("epoch")
-    axes[1, 2].plot(ep, precision, "g", label="P")
-    axes[1, 2].plot(ep, recall, "b", label="R")
-    axes[1, 2].plot(ep, map50, "r", label="mAP50")
-    axes[1, 2].plot(ep, map5095, "m", label="mAP50-95")
-    axes[1, 2].set_title("指标汇总"); axes[1, 2].legend(); axes[1, 2].set_xlabel("epoch")
-    plt.suptitle(f"YOLO26 交通标志检测 训练过程 (model={model}, imgsz={imgsz})", fontsize=15)
+
+    def smooth(y, f=0.08):
+        k = max(1, int(len(y) * f))
+        pad = np.pad(y, (k, k), mode="edge")
+        ker = np.ones(2 * k + 1) / (2 * k + 1)
+        return np.convolve(pad, ker, mode="same")[k:-k]
+
+    def panel(ax, y, title, color):
+        ax.scatter(ep, y, s=14, color=color, alpha=0.55, label="results")
+        ax.plot(ep, smooth(y), color=color, lw=2, ls="-", label="smooth")
+        ax.set_title(title, fontsize=12); ax.set_xlabel("epoch")
+        ax.grid(alpha=0.25); ax.legend(fontsize=8)
+
+    fig, axes = plt.subplots(2, 4, figsize=(20, 9))
+    panel(axes[0, 0], box_loss, "train/box_loss", "#1f77b4")
+    panel(axes[0, 1], cls_loss, "train/cls_loss", "#ff7f0e")
+    panel(axes[0, 2], dfl_loss, "train/dfl_loss", "#2ca02c")
+    panel(axes[0, 3], precision, "metrics/precision(B)", "#17becf")
+    panel(axes[1, 0], recall, "metrics/recall(B)", "#9467bd")
+    panel(axes[1, 1], map50, "metrics/mAP50(B)", "#d62728")
+    panel(axes[1, 2], map5095, "metrics/mAP50-95(B)", "#8c564b")
+    axes[1, 3].plot(ep, smooth(precision), "#17becf", label="P")
+    axes[1, 3].plot(ep, smooth(recall), "#9467bd", label="R")
+    axes[1, 3].plot(ep, smooth(map50), "#d62728", label="mAP50")
+    axes[1, 3].plot(ep, smooth(map5095), "#8c564b", label="mAP50-95")
+    axes[1, 3].set_title("指标汇总"); axes[1, 3].legend(fontsize=8)
+    axes[1, 3].grid(alpha=0.25); axes[1, 3].set_xlabel("epoch")
+    plt.suptitle(f"YOLO26 交通标志检测 训练过程 (model={model}, imgsz={imgsz}, epochs={epochs})",
+                 fontsize=15)
     plt.tight_layout()
     curve = os.path.join(OUT, "training_curves.png")
     plt.savefig(curve, dpi=130); plt.close()
