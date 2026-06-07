@@ -4,6 +4,7 @@
   <size><width>720</width><height>720</height><depth>3</depth></size>
   <segmented>0</segmented>
   <object>
+<<<<<<< HEAD
     <name>p26</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
     <bndbox><xmin>597</xmin><ymin>206</ymin><xmax>626</xmax><ymax>235</ymax></bndbox>
@@ -22,5 +23,10 @@
     <name>i2</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
     <bndbox><xmin>116</xmin><ymin>254</ymin><xmax>137</xmax><ymax>275</ymax></bndbox>
+=======
+    <name>pn</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>265</xmin><ymin>91</ymin><xmax>290</xmax><ymax>116</ymax></bndbox>
+>>>>>>> 9e212a860e4486f868b0cadda2cbad80f8f628c9
   </object>
 </annotation>

@@ -4,6 +4,7 @@
   <size><width>720</width><height>720</height><depth>3</depth></size>
   <segmented>0</segmented>
   <object>
+<<<<<<< HEAD
     <name>pl70</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
     <bndbox><xmin>566</xmin><ymin>251</ymin><xmax>589</xmax><ymax>274</ymax></bndbox>
@@ -12,5 +13,25 @@
     <name>il80</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
     <bndbox><xmin>463</xmin><ymin>119</ymin><xmax>479</xmax><ymax>135</ymax></bndbox>
+=======
+    <name>il80</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>524</xmin><ymin>39</ymin><xmax>543</xmax><ymax>58</ymax></bndbox>
+  </object>
+  <object>
+    <name>pn</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>435</xmin><ymin>255</ymin><xmax>458</xmax><ymax>278</ymax></bndbox>
+  </object>
+  <object>
+    <name>p3</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>132</xmin><ymin>140</ymin><xmax>162</xmax><ymax>170</ymax></bndbox>
+  </object>
+  <object>
+    <name>pl20</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>646</xmin><ymin>307</ymin><xmax>667</xmax><ymax>328</ymax></bndbox>
+>>>>>>> 9e212a860e4486f868b0cadda2cbad80f8f628c9
   </object>
 </annotation>
