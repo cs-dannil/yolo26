@@ -1,0 +1,26 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0072_night.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>i5</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>74</xmin><ymin>444</ymin><xmax>113</xmax><ymax>483</ymax></bndbox>
+  </object>
+  <object>
+    <name>p27</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>245</xmin><ymin>389</ymin><xmax>284</xmax><ymax>428</ymax></bndbox>
+  </object>
+  <object>
+    <name>pl20</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>156</xmin><ymin>408</ymin><xmax>196</xmax><ymax>448</ymax></bndbox>
+  </object>
+  <object>
+    <name>w55</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>161</xmin><ymin>484</ymin><xmax>258</xmax><ymax>581</ymax></bndbox>
+  </object>
+</annotation>

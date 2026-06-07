@@ -1,0 +1,26 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0006_small.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>ph4.5</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>486</xmin><ymin>393</ymin><xmax>512</xmax><ymax>419</ymax></bndbox>
+  </object>
+  <object>
+    <name>ph5</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>346</xmin><ymin>269</ymin><xmax>369</xmax><ymax>292</ymax></bndbox>
+  </object>
+  <object>
+    <name>pl30</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>265</xmin><ymin>386</ymin><xmax>294</xmax><ymax>415</ymax></bndbox>
+  </object>
+  <object>
+    <name>pg</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>376</xmin><ymin>9</ymin><xmax>390</xmax><ymax>23</ymax></bndbox>
+  </object>
+</annotation>

@@ -1,0 +1,21 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0034_small.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>w59</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>633</xmin><ymin>214</ymin><xmax>649</xmax><ymax>230</ymax></bndbox>
+  </object>
+  <object>
+    <name>ph4</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>218</xmin><ymin>405</ymin><xmax>239</xmax><ymax>426</ymax></bndbox>
+  </object>
+  <object>
+    <name>p19</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>576</xmin><ymin>337</ymin><xmax>603</xmax><ymax>364</ymax></bndbox>
+  </object>
+</annotation>

@@ -1,0 +1,11 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0066_backlight.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>pr40</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>230</xmin><ymin>137</ymin><xmax>349</xmax><ymax>256</ymax></bndbox>
+  </object>
+</annotation>
