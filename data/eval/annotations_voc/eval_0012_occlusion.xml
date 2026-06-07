@@ -1,0 +1,21 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0012_occlusion.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>pl70</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>178</xmin><ymin>450</ymin><xmax>290</xmax><ymax>562</ymax></bndbox>
+  </object>
+  <object>
+    <name>ip</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>339</xmin><ymin>31</ymin><xmax>463</xmax><ymax>155</ymax></bndbox>
+  </object>
+  <object>
+    <name>pl5</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>495</xmin><ymin>409</ymin><xmax>622</xmax><ymax>536</ymax></bndbox>
+  </object>
+</annotation>

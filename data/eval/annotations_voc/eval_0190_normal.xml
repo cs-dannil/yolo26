@@ -1,0 +1,16 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0190_normal.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>pr40</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>542</xmin><ymin>457</ymin><xmax>690</xmax><ymax>605</ymax></bndbox>
+  </object>
+  <object>
+    <name>pl60</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>474</xmin><ymin>314</ymin><xmax>612</xmax><ymax>452</ymax></bndbox>
+  </object>
+</annotation>

@@ -1,0 +1,21 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0194_occlusion.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>i5</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>562</xmin><ymin>278</ymin><xmax>671</xmax><ymax>387</ymax></bndbox>
+  </object>
+  <object>
+    <name>w32</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>509</xmin><ymin>307</ymin><xmax>570</xmax><ymax>368</ymax></bndbox>
+  </object>
+  <object>
+    <name>ph4</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>162</xmin><ymin>59</ymin><xmax>308</xmax><ymax>205</ymax></bndbox>
+  </object>
+</annotation>

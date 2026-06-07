@@ -1,0 +1,21 @@
+<annotation>
+  <folder>eval</folder>
+  <filename>eval_0078_normal.jpg</filename>
+  <size><width>720</width><height>720</height><depth>3</depth></size>
+  <segmented>0</segmented>
+  <object>
+    <name>p23</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>120</xmin><ymin>361</ymin><xmax>255</xmax><ymax>496</ymax></bndbox>
+  </object>
+  <object>
+    <name>i5</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>522</xmin><ymin>264</ymin><xmax>667</xmax><ymax>409</ymax></bndbox>
+  </object>
+  <object>
+    <name>io</name>
+    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
+    <bndbox><xmin>557</xmin><ymin>103</ymin><xmax>677</xmax><ymax>223</ymax></bndbox>
+  </object>
+</annotation>
