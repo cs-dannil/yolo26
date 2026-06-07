@@ -4,14 +4,8 @@
   <size><width>720</width><height>720</height><depth>3</depth></size>
   <segmented>0</segmented>
   <object>
-<<<<<<< HEAD
     <name>w59</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
     <bndbox><xmin>526</xmin><ymin>453</ymin><xmax>653</xmax><ymax>580</ymax></bndbox>
-=======
-    <name>i5</name>
-    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>483</xmin><ymin>214</ymin><xmax>621</xmax><ymax>352</ymax></bndbox>
->>>>>>> 9e212a860e4486f868b0cadda2cbad80f8f628c9
   </object>
 </annotation>

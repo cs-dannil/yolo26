@@ -18,11 +18,8 @@ onnxruntime>=1.17.0
 # 图形界面
 PySide6>=6.6.0
 
-<<<<<<< HEAD
 # 真实标志素材下载（fetch_real_assets.py）
 requests>=2.28.0
 
-=======
->>>>>>> 9e212a860e4486f868b0cadda2cbad80f8f628c9
 # 标注工具（评测集制作）
 labelImg>=1.8.6

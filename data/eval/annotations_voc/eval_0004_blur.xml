@@ -4,29 +4,8 @@
   <size><width>720</width><height>720</height><depth>3</depth></size>
   <segmented>0</segmented>
   <object>
-<<<<<<< HEAD
     <name>pl60</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
     <bndbox><xmin>381</xmin><ymin>272</ymin><xmax>504</xmax><ymax>395</ymax></bndbox>
-=======
-    <name>pm30</name>
-    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>250</xmin><ymin>284</ymin><xmax>390</xmax><ymax>424</ymax></bndbox>
-  </object>
-  <object>
-    <name>w32</name>
-    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>645</xmin><ymin>120</ymin><xmax>694</xmax><ymax>169</ymax></bndbox>
-  </object>
-  <object>
-    <name>i4</name>
-    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>592</xmin><ymin>346</ymin><xmax>701</xmax><ymax>455</ymax></bndbox>
-  </object>
-  <object>
-    <name>p11</name>
-    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>136</xmin><ymin>220</ymin><xmax>206</xmax><ymax>290</ymax></bndbox>
->>>>>>> 9e212a860e4486f868b0cadda2cbad80f8f628c9
   </object>
 </annotation>

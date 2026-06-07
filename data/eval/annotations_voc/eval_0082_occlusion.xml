@@ -4,7 +4,6 @@
   <size><width>720</width><height>720</height><depth>3</depth></size>
   <segmented>0</segmented>
   <object>
-<<<<<<< HEAD
     <name>i2</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
     <bndbox><xmin>117</xmin><ymin>16</ymin><xmax>251</xmax><ymax>150</ymax></bndbox>
@@ -23,10 +22,5 @@
     <name>w55</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
     <bndbox><xmin>497</xmin><ymin>100</ymin><xmax>534</xmax><ymax>137</ymax></bndbox>
-=======
-    <name>ph5</name>
-    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>408</xmin><ymin>201</ymin><xmax>543</xmax><ymax>336</ymax></bndbox>
->>>>>>> 9e212a860e4486f868b0cadda2cbad80f8f628c9
   </object>
 </annotation>

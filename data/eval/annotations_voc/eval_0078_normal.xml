@@ -6,25 +6,11 @@
   <object>
     <name>p23</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-<<<<<<< HEAD
     <bndbox><xmin>550</xmin><ymin>87</ymin><xmax>595</xmax><ymax>132</ymax></bndbox>
   </object>
   <object>
     <name>p19</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
     <bndbox><xmin>171</xmin><ymin>217</ymin><xmax>216</xmax><ymax>262</ymax></bndbox>
-=======
-    <bndbox><xmin>120</xmin><ymin>361</ymin><xmax>255</xmax><ymax>496</ymax></bndbox>
-  </object>
-  <object>
-    <name>i5</name>
-    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>522</xmin><ymin>264</ymin><xmax>667</xmax><ymax>409</ymax></bndbox>
-  </object>
-  <object>
-    <name>io</name>
-    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>557</xmin><ymin>103</ymin><xmax>677</xmax><ymax>223</ymax></bndbox>
->>>>>>> 9e212a860e4486f868b0cadda2cbad80f8f628c9
   </object>
 </annotation>

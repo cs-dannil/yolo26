@@ -4,7 +4,6 @@
   <size><width>720</width><height>720</height><depth>3</depth></size>
   <segmented>0</segmented>
   <object>
-<<<<<<< HEAD
     <name>pn</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
     <bndbox><xmin>81</xmin><ymin>195</ymin><xmax>210</xmax><ymax>324</ymax></bndbox>
@@ -13,15 +12,5 @@
     <name>w57</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
     <bndbox><xmin>462</xmin><ymin>61</ymin><xmax>580</xmax><ymax>179</ymax></bndbox>
-=======
-    <name>pne</name>
-    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>292</xmin><ymin>210</ymin><xmax>356</xmax><ymax>274</ymax></bndbox>
-  </object>
-  <object>
-    <name>w32</name>
-    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>450</xmin><ymin>341</ymin><xmax>600</xmax><ymax>491</ymax></bndbox>
->>>>>>> 9e212a860e4486f868b0cadda2cbad80f8f628c9
   </object>
 </annotation>

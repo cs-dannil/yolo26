@@ -4,14 +4,8 @@
   <size><width>720</width><height>720</height><depth>3</depth></size>
   <segmented>0</segmented>
   <object>
-<<<<<<< HEAD
     <name>ph5</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
     <bndbox><xmin>301</xmin><ymin>452</ymin><xmax>418</xmax><ymax>569</ymax></bndbox>
-=======
-    <name>il60</name>
-    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>320</xmin><ymin>444</ymin><xmax>394</xmax><ymax>518</ymax></bndbox>
->>>>>>> 9e212a860e4486f868b0cadda2cbad80f8f628c9
   </object>
 </annotation>

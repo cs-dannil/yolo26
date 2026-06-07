@@ -6,7 +6,6 @@
   <object>
     <name>pl100</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-<<<<<<< HEAD
     <bndbox><xmin>314</xmin><ymin>322</ymin><xmax>395</xmax><ymax>403</ymax></bndbox>
   </object>
   <object>
@@ -18,18 +17,5 @@
     <name>ph4.5</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
     <bndbox><xmin>287</xmin><ymin>297</ymin><xmax>326</xmax><ymax>336</ymax></bndbox>
-=======
-    <bndbox><xmin>316</xmin><ymin>446</ymin><xmax>438</xmax><ymax>568</ymax></bndbox>
-  </object>
-  <object>
-    <name>ph5</name>
-    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>270</xmin><ymin>199</ymin><xmax>340</xmax><ymax>269</ymax></bndbox>
-  </object>
-  <object>
-    <name>pl30</name>
-    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>202</xmin><ymin>402</ymin><xmax>314</xmax><ymax>514</ymax></bndbox>
->>>>>>> 9e212a860e4486f868b0cadda2cbad80f8f628c9
   </object>
 </annotation>

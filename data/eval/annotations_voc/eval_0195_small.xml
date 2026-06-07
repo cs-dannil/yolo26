@@ -4,7 +4,6 @@
   <size><width>720</width><height>720</height><depth>3</depth></size>
   <segmented>0</segmented>
   <object>
-<<<<<<< HEAD
     <name>p6</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
     <bndbox><xmin>172</xmin><ymin>230</ymin><xmax>201</xmax><ymax>259</ymax></bndbox>
@@ -18,10 +17,5 @@
     <name>pm20</name>
     <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
     <bndbox><xmin>480</xmin><ymin>15</ymin><xmax>510</xmax><ymax>45</ymax></bndbox>
-=======
-    <name>pl120</name>
-    <pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult>
-    <bndbox><xmin>342</xmin><ymin>387</ymin><xmax>364</xmax><ymax>409</ymax></bndbox>
->>>>>>> 9e212a860e4486f868b0cadda2cbad80f8f628c9
   </object>
 </annotation>
